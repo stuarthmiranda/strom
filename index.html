@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STROM - Tienda de Colonias</title>
+    <link rel="stylesheet" href="style_home.css">
+</head>
+
+<body>
+
+<header class="header">
+    <h1 class="logo">STRØM</h1>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Colonias</a>
+        <a href="#">Marcas</a>
+        <a href="#">Ofertas</a>
+
+        <span style="margin-left:25px; color:#00ff88;">
+            Hola, <?php echo $_SESSION['user']; ?> 👋
+        </span>
+
+        <a href="logout.php" style="color:#ff5858; margin-left:20px;">Salir</a>
+    </nav>
+</header>
+
+<section class="banner">
+    <h2>Fragancias Exclusivas</h2>
+    <p>Descubrí una colección única premium</p>
+</section>
+
+<section class="contenedorProductos">
+
+    <h2 class="tituloSeccion">Novedades</h2>
+
+    <div class="gridProductos">
+        
+        <div class="card">
+            <img src="img/perfume1.jpg" alt="">
+            <h3>Bleu de Chanel</h3>
+            <p class="precio">$89</p>
+            <button>Ver producto</button>
+        </div>
+
+        <div class="card">
+            <img src="img/perfume2.jpg" alt="">
+            <h3>Dior Sauvage</h3>
+            <p class="precio">$92</p>
+            <button>Ver producto</button>
+        </div>
+
+        <div class="card">
+            <img src="img/perfume3.jpg" alt="">
+            <h3>One Million</h3>
+            <p class="precio">$77</p>
+            <button>Ver producto</button>
+        </div>
+
+        <div class="card">
+            <img src="img/perfume4.jpg" alt="">
+            <h3>Invictus</h3>
+            <p class="precio">$85</p>
+            <button>Ver producto</button>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =======================
+     BOTÓN FLOTANTE WHATSAPP
+========================== -->
+<a href="https://wa.me/50686548537?text=Hola%2C%20estoy%20interesado%20en%20los%20productos%20de%20STROM" 
+   target="_blank" 
+   class="whatsapp-float">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+</a>
+
+<!-- BOTÓN FLOTANTE DE INSTAGRAM -->
+<a href="https://instagram.com/stuarthmiranda" 
+   target="_blank" 
+   class="instagram-float">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg">
+</a>
+
+
+</body>
+</html>
